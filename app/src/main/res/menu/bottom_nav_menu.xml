@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bottom_nav_menu.xml: bottom tabs for Smart Study Buddy — Thamer Ali -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Show list of tasks -->
+    <item
+        android:id="@+id/nav_tasks"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Tasks"
+        android:contentDescription="Go to task list" />
+
+    <!-- Pomodoro timer -->
+    <item
+        android:id="@+id/nav_timer"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="Timer"
+        android:contentDescription="Open focus timer" />
+
+    <!-- Random motivational quotes -->
+    <item
+        android:id="@+id/nav_quotes"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Motivation"
+        android:contentDescription="See motivational quote" />
+
+    <!-- GPA calculator -->
+    <item
+        android:id="@+id/nav_gpa"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="GPA"
+        android:contentDescription="Calculate GPA" />
+
+</menu>

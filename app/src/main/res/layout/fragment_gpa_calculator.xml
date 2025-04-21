@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_gpa_calculator.xml: GPA calculator form — Thamer Ali -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Course title -->
+    <EditText
+        android:id="@+id/et_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course name" />
+
+    <!-- Number of credits -->
+    <EditText
+        android:id="@+id/et_credit_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Credit hours" />
+
+    <!-- Grade value -->
+    <EditText
+        android:id="@+id/et_grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Grade (e.g. 4.0)" />
+
+    <!-- Save entry -->
+    <Button
+        android:id="@+id/btn_add_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add" />
+
+    <!-- Shows calculated GPA -->
+    <TextView
+        android:id="@+id/tv_gpa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Current GPA: 0.00"
+        android:textSize="24sp" />
+</LinearLayout>

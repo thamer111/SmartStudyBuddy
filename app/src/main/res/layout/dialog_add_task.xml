@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_add_task.xml: form to add a new task — Thamer Alyamani -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title input -->
+    <EditText
+        android:id="@+id/et_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter task title" />
+
+    <!-- Due date input -->
+    <EditText
+        android:id="@+id/et_task_due_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Due date (YYYY‑MM‑DD)" />
+
+    <!-- Course name input -->
+    <EditText
+        android:id="@+id/et_course_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course name" />
+</LinearLayout>

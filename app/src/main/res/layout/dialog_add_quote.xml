@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- dialog_add_quote.xml: simple quote input form — Thamer Ali -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input field for a new motivational quote -->
+    <EditText
+        android:id="@+id/et_quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your motivational quote" />
+</LinearLayout>

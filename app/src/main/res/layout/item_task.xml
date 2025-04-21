@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_task.xml: layout for each task item — Thamer Alyamani -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Task title -->
+    <TextView
+        android:id="@+id/task_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Task Title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Due date -->
+    <TextView
+        android:id="@+id/task_dueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Due: YYYY-MM-DD" />
+
+    <!-- Course name -->
+    <TextView
+        android:id="@+id/task_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Name" />
+
+    <!-- Completed checkbox -->
+    <CheckBox
+        android:id="@+id/task_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Mark task as completed"
+        android:text="Done" />
+</LinearLayout>

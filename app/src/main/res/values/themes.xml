@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- themes.xml: app theme settings — Thamer Alyamani -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light theme without action bar -->
+    <style name="Theme.SmartStudyBuddy" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary colors -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Status bar matches primary variant -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Force light mode only -->
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

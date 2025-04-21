@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_motivation_wall.xml: show a random quote — Thamer Alyamani -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Quote display -->
+    <TextView
+        android:id="@+id/tv_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay focused and keep learning!"
+        android:textSize="24sp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="Motivational quote" />
+
+    <!-- Button to add a new quote -->
+    <Button
+        android:id="@+id/btn_add_quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Quote" />
+</LinearLayout>

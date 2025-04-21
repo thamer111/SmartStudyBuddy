@@ -1,0 +1,76 @@
+// Smart Study Buddy — Gradle config
+// Author: Thamer Ali
+
+plugins {
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.compose)
+}
+
+android {
+    namespace 'com.example.smartstudybuddy'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.smartstudybuddy"
+        minSdk 24
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles(
+                    getDefaultProguardFile('proguard-android-optimize.txt'),
+                    'proguard-rules.pro'
+            )
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        compose true
+    }
+}
+
+dependencies {
+    // Room (local DB)
+    implementation "androidx.room:room-runtime:2.4.3"
+    annotationProcessor "androidx.room:room-compiler:2.4.3"
+
+    // LiveData & Lifecycle
+    implementation 'androidx.lifecycle:lifecycle-livedata:2.4.0'
+    implementation libs.lifecycle.runtime.ktx
+
+    // UI & Compose BOM
+    implementation libs.activity.compose
+    implementation platform(libs.compose.bom)
+    implementation libs.ui
+    implementation libs.ui.graphics
+    implementation libs.ui.tooling.preview
+    implementation libs.material3
+
+    // AndroidX core
+    implementation libs.appcompat
+    implementation libs.material
+
+    // Testing
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+    debugImplementation libs.ui.tooling
+    debugImplementation libs.ui.test.manifest
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+}

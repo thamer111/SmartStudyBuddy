@@ -1,0 +1,15 @@
+<resources>
+    <!-- Your custom palette -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorSecondaryVariant">#018786</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Aliases so the library’s night‑mode XML finds them -->
+    <color name="purple_200">@color/colorPrimary</color>
+    <color name="purple_700">@color/colorPrimaryVariant</color>
+    <color name="teal_200">@color/colorSecondary</color>
+    <color name="teal_700">@color/colorSecondaryVariant</color>
+</resources>

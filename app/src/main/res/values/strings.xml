@@ -1,0 +1,37 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">Smart Study Buddy</string>
+    <string name="header_developer">Developer: Thamer Alyamani</string>
+    <string name="header_crn">CRN: 22598</string>
+
+    <!-- Bottom navigation labels -->
+    <string name="nav_tasks">Tasks</string>
+    <string name="nav_timer">Timer</string>
+    <string name="nav_quotes">Motivation</string>
+    <string name="nav_gpa">GPA</string>
+
+    <!-- Task Manager -->
+    <string name="dialog_new_task">New Task</string>
+    <string name="hint_task_title">Enter task title</string>
+    <string name="hint_task_due_date">Due date (YYYY-MM-DD)</string>
+    <string name="hint_task_course">Course name</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+
+    <!-- Focus Timer -->
+    <string name="timer_start_pause">Start/Pause</string>
+    <string name="timer_reset">Reset</string>
+
+    <!-- Motivation Wall -->
+    <string name="dialog_new_quote">New Quote</string>
+    <string name="hint_new_quote">Type your motivational quote here</string>
+    <string name="default_quote">Stay focused and keep learning!</string>
+    <string name="btn_save_quote">Save</string>
+
+    <!-- GPA Calculator -->
+    <string name="hint_course_name">Course name</string>
+    <string name="hint_credit_hours">Credit hours</string>
+    <string name="hint_grade">Grade (e.g. 4.0)</string>
+    <string name="btn_save_entry">Add</string>
+    <string name="label_current_gpa">Current GPA: %1$.2f</string>
+</resources>
